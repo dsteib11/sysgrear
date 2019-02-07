@@ -1,0 +1,86 @@
+@layout('layouts/main')
+
+@section('title')
+SYSGEAR | All Products
+@endsection
+
+@section('content')
+<section class="content-area all-products-page">
+  <div class="filter-section">
+    <div class="filter">
+      <input type="checkbox" id="gender-options" class="toggle"/>
+      <label class="title" for="gender-options">gender</label>
+      <div class="content">
+        <div class="gender">
+          <div class="option">male</div>
+          <div class="option">female</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="filter">
+      <input type="checkbox" id="brand-options" class="toggle"/>
+      <label class="title" for="brand-options">brand</label>
+      <div class="content">
+        <div class="brand">
+          <div class="option">nike</div>
+          <div class="option">jordans</div>
+          <div class="option">adidas</div>
+          <div class="option">vans</div>
+          <div class="option">reebok</div>
+          <div class="option">converse</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="filter">
+        <input type="checkbox" id="price-options" class="toggle"/>
+        <label class="title" for="price-options">price</label>
+        <div class="content">
+          <div class="price">
+            <input type="text" name="min" placeholder="min" class="option">
+            <input type="text" name="max" placeholder="max" class="option">
+          </div>
+        </div>
+      </div>
+
+    <div class="filter">
+      <input type="checkbox" id="size-dropdown" class="toggle"/>
+      <label class="title" for="size-dropdown">size</label>
+      <div class="content">
+        <div class="size">
+          <div class="option">5</div>
+          <div class="option">5.5</div>
+          <div class="option">6</div>
+          <div class="option">6.5</div>
+          <div class="option">7</div>
+          <div class="option">7.5</div>
+          <div class="option">8</div>
+          <div class="option">8.5</div>
+          <div class="option">9</div>
+          <div class="option">9.5</div>
+          <div class="option">10</div>
+          <div class="option">10.5</div>
+          <div class="option">11</div>
+          <div class="option">11.5</div>
+        </div>
+      </div>
+    </div>
+    <button>filter</button>
+  </div>
+  <div class="all-products-grid">
+      @each(products in products)
+        <div class="product-wrap">
+          <div class="product">
+            <div class="circle">
+              <img src="/img/products/nike-foamposite-pro-black.png" alt="products">
+            </div>
+          </div>
+          <div class="title">air foamposite</div>
+          <div class="price">$350</div>
+        </div>
+      @endeach
+  </div>
+</section>
+@endsection
+  

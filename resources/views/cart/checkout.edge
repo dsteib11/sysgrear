@@ -1,0 +1,125 @@
+@layout('layouts/main')
+
+@section('title')
+SYSGEAR | Checkout
+@endsection
+
+@section('content')
+<section class="content-area checkout-page">
+  <div class="container">
+    <h1>checkout order</h1>
+    <div class="checkout-container">
+      <div class="form-section">
+        <form>
+          <div class="title">
+            <h3>shipping information</h3>
+          </div>
+          <div class="shipping-info">
+            <div class="left-col">
+              <div class="form-group">
+                <label id="firstName" for="firstName">first name</label>
+                <input type="text" placeholder="First Name" name="firstName">
+              </div>
+              <div class="form-group">
+                <label id="city" for="city">city</label>
+                <input type="text" placeholder="City" name="city">
+              </div>
+              <div class="form-group">
+                <label id="address-1" for="address-1">address #1</label>
+                <input type="text" placeholder="Address" name="address-1">
+              </div>
+              <div class="form-group">
+                <label id="zipcode" for="zipcode">zipcode</label>
+                <input type="text" placeholder="Zipcode" name="zipcode">
+              </div>
+            </div>
+
+            <div class="right-col">
+              <div class="form-group">
+                <label id="lastName" for="lastName">last name</label>
+                <input type="text" placeholder="Last Name" name="lastName">
+              </div>
+              <div class="form-group">
+                <label id="state" for="state">state</label>
+                <input type="text" placeholder="State" name="state">
+              </div>
+              <div class="form-group">
+                <label id="address-2" for="address-2">address #2</label>
+                <input type="text" placeholder="Address" name="address-2">
+              </div>
+              <div class="form-group">
+                <label id="country" for="country">country</label>
+                <input type="text" placeholder="Country" name="country">
+              </div>
+            </div>
+          </div>
+          <div class="title">
+            <h3>billing information</h3>
+          </div>
+          <div class="shipping-info">
+            <div class="left-col">
+              <div class="form-group">
+                <label id="firstName" for="firstName">first name</label>
+                <input type="text" placeholder="First Name" name="firstName">
+              </div>
+              <div class="form-group">
+                <label id="lastName" for="lastName">last name</label>
+                <input type="text" placeholder="Last Name" name="lastName">
+              </div>
+              <div class="form-group">
+                <label id="address-1" for="address-1">address #1</label>
+                <input type="text" placeholder="Address" name="address-1">
+              </div>
+              <div class="form-group">
+                <label id="address-2" for="address-2">address #2</label>
+                <input type="text" placeholder="Address" name="address-2">
+              </div>
+            </div>
+
+            <div class="right-col">
+              <div class="form-group">
+                <label id="city" for="city">city</label>
+                <input type="text" placeholder="City" name="city">
+              </div>
+              <div class="form-group">
+                <label id="state" for="state">state</label>
+                <input type="text" placeholder="State" name="state">
+              </div>
+              <div class="form-group">
+                <label id="zipcode" for="zipcode">zipcode</label>
+                <input type="text" placeholder="Zipcode" name="zipcode">
+              </div>
+              <div class="form-group">
+                <label id="country" for="country">country</label>
+                <input type="text" placeholder="Country" name="country">
+              </div>
+            </div>
+          </div>
+        </form>
+        <div class="totals">
+          <div class="title">
+            <h3>total:</h3>
+          </div>
+          <div class="items">
+            <span>items:</span>
+            5
+          </div>
+          <div class="tax">
+            <span>tax:</span>
+            $10.00
+          </div>
+          <div class="shipping">
+            <span>shipping:</span>
+            3 days
+          </div>
+          <div class="price">
+            <span>total price:</span>
+            $1600
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+@endsection
+  

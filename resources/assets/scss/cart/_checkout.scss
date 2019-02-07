@@ -1,0 +1,91 @@
+
+.content-area.checkout-page {
+  padding: 116px 15px 25px;
+  overflow-y: scroll;
+  position: relative;
+  .container {
+    background: #fff;
+    h1 {
+      font-size: 3rem;
+      text-transform: capitalize;
+      text-align: start;
+      padding: 10px;
+    }
+    .checkout-container {
+      border-top: 1px dotted lightgray;
+      padding: 50px 0;
+      .form-section {
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        grid-gap: 10px;
+        form {
+          .title {
+            h3 {
+              text-transform: capitalize;
+              font-size: 1.5rem;
+              font-weight: 500;
+              margin-bottom: 25px;
+              text-align: center;
+              }
+            }
+          .shipping-info {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 15px;
+            margin-bottom: 50px;
+            .left-col {
+              .form-group {
+                margin-bottom: 1rem;
+                label {
+                  text-transform: capitalize;
+                  font-size: 1rem;
+                  font-weight: 500;
+                  margin-bottom: .5rem;
+                  display: block;
+                }
+              }
+            }
+            .right-col {
+              .form-group {
+                margin-bottom: 1rem;
+                label {
+                  text-transform: capitalize;
+                  font-size: 1rem;
+                  font-weight: 500;
+                  margin-bottom: .5rem;
+                  display: block;
+                }
+              }
+            }
+          }
+        }
+        .totals {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          .title {
+            h3 {
+              text-transform: capitalize;
+              font-size: 1.5rem;
+              font-weight: 500;
+              margin-bottom: 25px;
+              text-align: center;
+            }
+          }
+          .items,
+          .tax,
+          .shipping,
+          .price {
+            margin-bottom: 1.5rem;
+            text-transform: capitalize;
+            font-weight: 300;
+            span {
+              font-weight: 700;
+            }
+          }
+        }
+      }
+    }
+  }  
+}

@@ -1,0 +1,52 @@
+.content-area.about-page {
+  padding: 120px 0;
+  
+  h1 {
+    font-size: 3rem;
+    text-transform: capitalize;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+  p {
+    max-width: 650px;
+    margin: 0 auto;
+    line-height: 1.5;
+    font-size: 1.2rem;
+    font-weight: 300;
+  } 
+}
+
+
+// MEDIA QUERIES
+
+// Smartphones Mobiles
+
+@media (min-width: 320px) and(max-width: 480px) {
+  .content-area.about-page {
+    padding: 250px 0;
+    height: 100%;
+    overflow: hidden;
+    .container {
+      width: 100%;
+      max-width: 480px;
+      padding: 0 5px;
+      margin: 0 auto;
+    }
+    
+    .box-container {
+      background: #fff;
+    }
+    h1 {
+      font-size: 2rem;
+      text-transform: capitalize;
+      text-align: center;
+    }
+    p {
+      max-width: 350px;
+      margin: 0 auto;
+      line-height: 1.5;
+      font-size: 1.2rem;
+      font-weight: 300;
+    }
+  }
+}

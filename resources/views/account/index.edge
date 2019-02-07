@@ -1,0 +1,24 @@
+@layout('layouts/main')
+
+@section('title')
+SYSGEAR | Account
+@endsection
+
+@section('content')
+<section class="content-area account-page">
+  <div class="container">
+    <h1>account</h1>
+    <div class="checkout-container">
+      <div class="form-section">
+        <div class="forms">
+          this is the Account page
+        </div>
+        <div class="sub-menu">
+          @include('account/sub-menu')
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+@endsection
+  
