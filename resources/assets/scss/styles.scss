@@ -89,6 +89,9 @@ header {
     font-size: 1rem;
     text-transform: uppercase;
     padding: 15px;
+    #CartBtnRoot {
+      display: inline-block;
+    }
     a {
       color: #252526;
       padding-right: 15px;
